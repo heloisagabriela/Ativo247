@@ -1,0 +1,44 @@
+<form>
+    <h1>Editando um Paciente</h1>
+    <mat-form-field class="form">
+        <mat-label>Nome</mat-label>
+            <input matInput [(ngModel)]="paciente.nome" type="text"name="nome" placeholder="Gabriel" > 
+
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>CPF</mat-label>
+            <textarea matInput [(ngModel)]="paciente.cpf" type="number"name="cpf" placeholder="1232154654"></textarea>  
+
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Médico</mat-label>
+            <textarea matInput [(ngModel)]="paciente.medico" type="text"name="medico" placeholder=" dr. hugo"></textarea>  
+
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Ultima Prescrição</mat-label>
+            <textarea matInput [(ngModel)]="paciente.ultimaPrescricao" type="number"name="ultimaPrescricao" placeholder="12-02-2021"></textarea>  
+
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Status</mat-label>
+            <textarea matInput [(ngModel)]="paciente.status" type="text"name="status" placeholder="ativo"></textarea>  
+
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Endereco do Paciente</mat-label>
+            <textarea matInput [(ngModel)]="paciente.endereco" type="text"name="endereco" placeholder=" "></textarea>  
+
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="update()"class="mat-elevation-z8" mat-stroked-button color="accent">Editar</button>
+        <button (click)="updateCancel()"class="mat-elevation-z8" mat-stroked-button color="warn">Cancelar</button>
+    </div>
+
+</form>

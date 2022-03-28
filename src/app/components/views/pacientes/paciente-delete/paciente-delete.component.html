@@ -1,0 +1,38 @@
+<form>
+    <h1>Deletando um paciente</h1>
+    <mat-form-field class="form">
+        <mat-label>Nome</mat-label>
+            <input matInput [(ngModel)]="paciente.nome" type="text"name="nome" disabled> 
+
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>CPF</mat-label>
+            <textarea matInput [(ngModel)]="paciente.cpf" type="text"name="cpf" disabled ></textarea>  
+
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Médico</mat-label>
+            <textarea matInput [(ngModel)]="paciente.medico" type="text"name="medico" disabled ></textarea>  
+
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Ultima Prescrição</mat-label>
+            <textarea matInput [(ngModel)]="paciente.ultimaPrescricao" type="text"name="ultimaPrescricao" disabled ></textarea>  
+
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Status</mat-label>
+            <textarea matInput [(ngModel)]="paciente.status" type="text"name="status" disabled ></textarea>  
+
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="delete()"class="mat-elevation-z8" mat-flat-button color="warn">Deletar</button>
+        <button (click)="deleteCancel()"class="mat-elevation-z8" mat-stroked-button color="basic">Cancelar</button>
+    </div>
+
+</form>

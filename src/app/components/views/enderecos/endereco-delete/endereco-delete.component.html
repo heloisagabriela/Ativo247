@@ -1,0 +1,46 @@
+<form>
+    <h1>Deletando um Endereço</h1>
+    
+    <mat-form-field class="form">
+        <mat-label>CEP</mat-label>
+            <input matInput [(ngModel)]="endereco.cep"[formControl]="cep" required type="text"name="cep" placeholder="Ex. Wolenberg Silva" maxlength="100">
+            <!-- <mat-error *ngIf="cep.invalid"> {{ getMessage() }}</mat-error> -->
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Rua</mat-label>
+            <textarea matInput [(ngModel)]="endereco.rua" [formControl]="rua" required type="text"name="rua" placeholder="Ex. Mussum Lorem ipsum" maxlength="2000000"></textarea>
+            <!-- <mat-error *ngIf="rua.invalid"> {{ getMessage() }}</mat-error> -->
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Número</mat-label>
+            <input matInput [(ngModel)]="endereco.numero"[formControl]="numero" required type="text"name="numero" placeholder="Ex. Wolenberg Silva" maxlength="100">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Bairro</mat-label>
+            <input matInput [(ngModel)]="endereco.bairro"[formControl]="bairro" required type="text"name="bairro" placeholder="Ex. Wolenberg Silva" maxlength="100">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Complemento</mat-label>
+            <input matInput [(ngModel)]="endereco.complemento"[formControl]="complemento" required type="text"name="complemento" placeholder="Ex. Wolenberg Silva" maxlength="100">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Cidade</mat-label>
+            <input matInput [(ngModel)]="endereco.cidade"[formControl]="cidade" required type="text"name="cidade" placeholder="Ex. Wolenberg Silva" maxlength="100">
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Estado</mat-label>
+            <input matInput [(ngModel)]="endereco.estado"[formControl]="estado" required type="text"name="estado" placeholder="Ex. Wolenberg Silva" maxlength="100">
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="delete()"class="mat-elevation-z8" mat-flat-button color="warn">DELETAR</button>
+        <button (click)="CancelParaEnderecos()" class="mat-elevation-z8" mat-stroked-button color="warn">CANCELAR</button>
+    </div>
+
+</form>

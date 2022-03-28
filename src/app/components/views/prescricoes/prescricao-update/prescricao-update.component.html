@@ -1,0 +1,32 @@
+<form>
+    <h1>Editando uma Prescrição</h1>
+    <mat-form-field class="form">
+        <mat-label>Nome</mat-label>
+            <input matInput [(ngModel)]="prescricao.nome" type="text"name="nome"> 
+
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Remédio</mat-label>
+            <textarea matInput [(ngModel)]="prescricao.remedio" type="text"name="remedio"></textarea>  
+
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Descrição</mat-label>
+            <textarea matInput [(ngModel)]="prescricao.descricao" type="text"name="descricao"></textarea>  
+
+    </mat-form-field>
+
+    <mat-form-field class="form">
+        <mat-label>Médico</mat-label>
+            <textarea matInput [(ngModel)]="prescricao.medico" type="text"name="medico"></textarea>  
+
+    </mat-form-field>
+
+    <div class="buttons">
+        <button (click)="update()"class="mat-elevation-z8" mat-stroked-button color="accent">Editar</button>
+        <button (click)="updateCancel()"class="mat-elevation-z8" mat-stroked-button color="warn">Cancelar</button>
+    </div>
+
+</form>
